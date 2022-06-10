@@ -33,6 +33,9 @@ class Database{
     }
 
     public function select($sql, $parametros = null){
+
+        $sql = trim($sql);
+
         $this->ligar();
 
         if(!preg_match("/^SELECT/i", $sql)){
@@ -65,6 +68,8 @@ class Database{
     }
 
     public function insert($sql, $parametros = null){
+
+        $sql = trim($sql);
        
         $this->ligar();
 
@@ -94,6 +99,8 @@ class Database{
     }
 
     public function update($sql, $parametros = null){
+
+        $sql = trim($sql);
        
         $this->ligar();
 
@@ -123,6 +130,8 @@ class Database{
     }
 
     public function delete($sql, $parametros = null){
+
+        $sql = trim($sql);
        
         $this->ligar();
 
@@ -152,6 +161,8 @@ class Database{
     }
 
     public function statement($sql, $parametros = null){
+
+        $sql = trim($sql);
        
         $this->ligar();
 
