@@ -16,5 +16,7 @@
             "name": "Karina Trompak"
         }
     ],
-    "require": {}
+    "require": {
+        "phpmailer/phpmailer": "^6.6"
+    }
 }
